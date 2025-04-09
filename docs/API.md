@@ -15,7 +15,12 @@ For example, to get the value of a setting named `telegram.token`, you would use
 `http://localhost:8080/setting/telegram.token`
 
 Simple usage:
-1. Add new g
+1. Add new group
+2. Add new token (for group)
+3. Add new setting (via group token)
+4. Get setting (via group token)
+
+You may revoke the token at any time, if it is not used anymore (or stolen).
 
 ### Section: Settings
 
@@ -36,7 +41,7 @@ Simple usage:
 Request example:\
 `GET /api/method/groups.new?alias=TestGroup&description=TestGroupDescription&token=<adminToken>`
 
-Response example:\
+Response example:
 ```json
 {
   "response": {
@@ -49,8 +54,3 @@ Response example:\
 Errors: `101`, `102`, `103`, `201`, `301`, `302`, `601`
 
 #### `groups.del`:
-- **Method**: `GET`
-- **Description**: Delete a group.
-- **Parameters**:
-  - `name`: The name of the group.
-  - `token`: **Admin token**
