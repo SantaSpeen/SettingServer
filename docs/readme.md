@@ -23,9 +23,9 @@ Simple usage:
 You may revoke the token at any time, if it is not used anymore (or stolen).
 
 *Sections*:
-- [Settings](./API/Settings)
-- [Groups](./API/Groups)
-- [Tokens](./API/Tokens)
-- [Stats](./API/Stats)
+- [Settings](./API/Settings.md)
+- [Groups](./API/Groups.md)
+- [Tokens](./API/Tokens.md)
+- [Stats](./API/Stats.md)
 
-* [Error Codes](./ErrorCodes)
+* [Error Codes](./ErrorCodes.md)
