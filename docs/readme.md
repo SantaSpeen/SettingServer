@@ -22,35 +22,10 @@ Simple usage:
 
 You may revoke the token at any time, if it is not used anymore (or stolen).
 
-### Section: Settings
+*Sections*:
+- [Settings](./API/Settings)
+- [Groups](./API/Groups)
+- [Tokens](./API/Tokens)
+- [Stats](./API/Stats)
 
-#### `settings.new`:
-#### `settings.get`:
-#### `settings.getByGroup`:
-
-### Section: Groups
-
-#### `groups.new`:
-- **Method**: `GET`
-- **Description**: Create a new group.
-- **Parameters**:
-  - `alias`: The name of the group. **(Cannot start with a digit and must match the specified regex for valid aliases.)**
-  - `description`: A description of the group.
-  - `token`: **Admin token**
-
-Request example:\
-`GET /api/method/groups.new?alias=TestGroup&description=TestGroupDescription&token=<adminToken>`
-
-Response example:
-```json
-{
-  "response": {
-    "id": 1,
-    "alias": "TestGroup"
-  }
-}
-```
-
-Errors: `101`, `102`, `103`, `201`, `301`, `302`, `601`
-
-#### `groups.del`:
+* [Error Codes](./ErrorCodes)
