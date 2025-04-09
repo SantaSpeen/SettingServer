@@ -1,5 +1,8 @@
 # Section: `Groups`
 
+Section for managing groups in the system.\
+This section provides endpoints for creating, retrieving, updating, and deleting groups.
+
 ## Contents:
 - [`groups.get`](#groupsget)
 - [`groups.getAll`](#groupsgetall)
@@ -7,6 +10,7 @@
 - [`groups.del`](#groupsdel)
 - [`groups.update`](#groupsupdate)
 
+---
 
 ### `groups.get`:
 ### `groups.getAll`:
