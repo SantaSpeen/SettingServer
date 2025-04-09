@@ -1,6 +1,17 @@
 # Section: `Groups`
 
-#### `groups.new`:
+## Contents:
+- [`groups.get`](#groupsget)
+- [`groups.getAll`](#groupsgetall)
+- [`groups.new`](#groupsnew)
+- [`groups.del`](#groupsdel)
+- [`groups.update`](#groupsupdate)
+
+
+### `groups.get`:
+### `groups.getAll`:
+
+### `groups.new`:
 - **Method**: `GET`
 - **Description**: Create a new group.
 - **Parameters**:
@@ -23,4 +34,5 @@ Response example:
 
 Errors: `101`, `102`, `103`, `201`, `301`, `302`, `601`
 
-#### `groups.del`:
+### `groups.del`:
+### `groups.update`:
