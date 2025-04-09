@@ -9,7 +9,7 @@ The API is designed to be simple and easy to use, with clear endpoints for each 
 
 Base URL: `http://localhost:8080/`\
 API: `/api/method`\
-Settings: `/setting/<SETTING_NAME>`\
+Settings: `/setting/<SETTING_NAME>`
 
 For example, to get the value of a setting named `telegram.token`, you would use the following URL:\
 `http://localhost:8080/setting/telegram.token`
@@ -29,19 +29,24 @@ Simple usage:
 - **Method**: `GET`
 - **Description**: Create a new group.
 - **Parameters**:
-  - `name`: The name of the group.
+  - `alias`: The name of the group. **(Cannot start with a digit and must match the specified regex for valid aliases.)**
   - `description`: A description of the group.
   - `token`: **Admin token**
 
 Request example:\
-`GET /api/method/groups.new?name=TestGroup&description=TestGroupDescription&token=<adminToken>`
+`GET /api/method/groups.new?alias=TestGroup&description=TestGroupDescription&token=<adminToken>`
 
 Response example:\
 ```json
 {
-  "res"
+  "response": {
+    "id": 1,
+    "alias": "TestGroup"
+  }
 }
 ```
+
+Errors: `101`, `102`, `103`, `201`, `301`, `302`, `601`
 
 #### `groups.del`:
 - **Method**: `GET`
